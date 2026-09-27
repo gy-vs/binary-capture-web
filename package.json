@@ -1,0 +1,20 @@
+{
+  "name": "packet-reassembly-workbench",
+  "version": "1.0.0",
+  "description": "二进制协议抓包重组工作台：乱序/重复/缺失 TCP/UDP 片段的导入、局部重组、消息边界确认与错误溯源",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./server": "./src/server.js",
+    "./client": "./src/client.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/run-server.js"
+  },
+  "license": "MIT"
+}
